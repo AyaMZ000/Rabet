@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rabet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        :root {
+            --navy-dark: #0f172a;
+            --navy: #1e293b;
+            --navy-soft: #334155;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(
+                135deg,
+                #ffffff 0%,
+                #f7f9fc 40%,
+                #eef2f7 100%
+            );
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.15);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            position: relative;
+            max-width: 520px;
+            width: 92%;
+            padding: 110px 45px;
+            border-radius: 20px;
+            text-align: center;
+
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+
+            border: 1px solid rgba(15, 23, 42, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+        }
+
+        .card::before {
+            content: "";
+            position: absolute;
+            inset: -40px;
+            background: radial-gradient(
+                circle,
+                rgba(255, 255, 255, 0.6),
+                transparent 70%
+            );
+            z-index: -1;
+            filter: blur(40px);
+        }
+
+        .logo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 35px;
+        }
+
+        .tagline {
+            color: var(--navy-dark);
+            font-size: 22px;
+            font-weight: 600;
+            margin: 15px 0 10px;
+        }
+
+        .subtitle {
+            color: var(--navy);
+            font-size: 16px;
+            margin-bottom: 45px;
+        }
+
+        a {
+            display: block;
+            margin: 18px 0;
+            padding: 22px;
+            text-decoration: none;
+
+            color: var(--navy-dark);
+            font-size: 18px;
+            font-weight: 500;
+
+            border-radius: 35px;
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+
+            border: 1px solid rgba(15, 23, 42, 0.25);
+            transition: all 0.3s ease;
+        }
+
+        a i {
+            margin-right: 12px;
+            font-size: 22px;
+            color: var(--navy-dark);
+            vertical-align: middle;
+        }
+
+        a:hover {
+            transform: translateY(-3px);
+            background: rgba(255, 255, 255, 0.4);
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="overlay">
+    <div class="card">
+
+        <img src="logo.png" alt="Logo" class="logo">
+
+        <h2 class="tagline">All Home Services in One Place</h2>
+        <p class="subtitle">We take care of your home from A to Z</p>
+
+        <a href="https://wa.me/message/LOZIYIMMF6BMO1"_blank">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        </a>
+
+        <a href="https://www.facebook.com/profile.php?id=61587358643243" target="_blank">
+            <i class="fa-brands fa-facebook-f"></i> Facebook
+        </a>
+
+        <a href="https://www.instagram.com/ra_bet.eg/" target="_blank">
+            <i class="fa-brands fa-instagram"></i> Instagram
+        </a>
+
+    </div>
+</div>
+
+</body>
+</html>
